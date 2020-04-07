@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title="Hang Man Game">
+  <title>Hang Man Game</title>
+
+<style>
+
+body{
+  background-image: linear-gradient(to bottom right, #beeeee 60%, #BEaaEE 30%);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(handlee-regular.ttf);
+}
+
+div {
+  font-family: myFirstFont;
+  align: Center;
+  margin: 0;
+}
+iframe{
+  background-image: url('hangMan.png');
+  height: 400;
+  width: 400;
+}
+h1{
+font-size: 60px;
+margin-bottom: 10px;
+margin-top: 0px;
+
+}
+  button {
+    font-family: myFirstFont;
+    width: 75px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 75%;
+    color: black;
+    outline: none;
+    text-align: center;
+    background-color: inherit;
+    margin: 5px;
+    box-shadow: 0 .375px .5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background: radial-gradient(#BEEEEE 1%, #ADEDFF 99%);
+    background-size: 75px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    }
+    button:hover {
+      font-family: myFirstFont;
+        height: 60px;
+        width: 60px;
+        margin: 0px;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        background-image: none;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+    button:active {
+      font-family: myFirstFont;
+        height: 60px;
+        width: 60px;
+        margin: 0px;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        background-image: none;
+        background-color: white;
+        color: gray;
+        border: none;
+        outline: none;
+        font-weight: bold;
+
+}
+</style>
+
+</head>
+
+<body>
+<div align = center>
+  <H1>Hang Man</h1>
+  <!--
+<iframe id="game" src="https://editor.p5js.org/Edanel/embed/mxsPI-Aoy" width="400" height="400"></iframe>
+</div>
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<button id="postYourAdd" onclick="postYourAdd()">START GAME</button>
+<br>
+<iframe id="forPostyouradd" data-src="https://editor.p5js.org/Edanel/embed/mxsPI-Aoy" src="about:blank" width="400" height="400" ></iframe>
+</div>
+<p>This code was created by Emile Daniel, Abhi Karthana, and Arjun Mudda<p>
+
+<script>
+function postYourAdd () {
+    var iframe = $("#forPostyouradd");
+    iframe.attr("src", iframe.data("src"));
+}
+</script>
+
+</body>
+</html>
