@@ -1,0 +1,3 @@
+[submodule "Jupyter-Notebook-COVID-19-data"]
+	path = Jupyter-Notebook-COVID-19-data
+	url = https://github.com/myrrhkhan/Jupyter-Notebook-COVID-19-data.git
