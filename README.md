@@ -1,2 +1,2 @@
-# mock-hackathon
-upload portal for 612 hackathon projects
+When you go to my repo:
+#Ignore the default branch. go to master
